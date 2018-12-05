@@ -1,0 +1,44 @@
+{
+  "name": "immutable-transform-memoizer",
+  "version": "0.0.1",
+  "description": "A utility for reusing objects from Immutable.js transformations - such as .toJS",
+  "author": "Social Tables (https://www.socialtables.com)",
+  "contributors": ["Robert Brownstein (https://github.com/brownstein)"],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socialtables/immutable-transform-memoizer.git"
+  },
+  "scripts": {
+    "build": "babel index.js --out-dir dist",
+    "lint": "eslint .",
+    "pretest": "npm run lint && npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "immutable",
+    "immutable.js",
+    "memoizer",
+    "memoization",
+    "performance"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "flow-bin": "^0.86.0",
+    "immutable": "^4.0.0-rc.12",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.13.1",
+    "uuid": "^3.3.2"
+  }
+}
