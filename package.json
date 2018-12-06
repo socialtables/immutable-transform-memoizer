@@ -10,10 +10,11 @@
     "url": "git+https://github.com/socialtables/immutable-transform-memoizer.git"
   },
   "scripts": {
-    "build": "babel index.js --out-dir dist",
     "lint": "eslint .",
+    "build": "babel index.js --out-dir dist",
     "pretest": "npm run lint && npm run build",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "immutable",
